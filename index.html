@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donated Items</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="app-bar">
+      <button class="back-btn" aria-label="Go back">&larr;</button>
+      <h1>Donate Items</h1>
+      <button class="user-btn" aria-label="User profile">&#128100;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" placeholder="Search" aria-label="Search items" id="searchInput" />
+      <button id="searchBtn">&#128269;</button>
+    </section>
+
+    <section class="items-section" aria-label="Items available for donation">
+      <div class="item" data-name="kitchenware">
+        <div class="item-img kitchenware-img" aria-label="Kitchen ware image"></div>
+        <p class="item-label">Kitchen ware</p>
+      </div>
+      <div class="item" data-name="tshirt">
+        <div class="item-img tshirt-img" aria-label="T-shirt for men image"></div>
+        <p class="item-label">T-shirt for men</p>
+      </div>
+      <div class="item" data-name="kurti">
+        <div class="item-img kurti-img" aria-label="Kurti for women image"></div>
+        <p class="item-label">Kurti for women</p>
+      </div>
+    </section>
+
+    <section class="donated-items-section">
+      <h2>~ DONATED ITEMS ~</h2>
+      <form id="donationForm" aria-label="Donation categories">
+        <label>
+          <input type="checkbox" name="donationCategory" value="motivation" />
+          Motivation - from women & girls
+        </label>
+        <label>
+          <input type="checkbox" name="donationCategory" value="makeup" />
+          Makeup & Skincare
+        </label>
+        <label>
+          <input type="checkbox" name="donationCategory" value="kids" />
+          Kids fashion
+        </label>
+        <label>
+          <input type="checkbox" name="donationCategory" value="accessories" />
+          Accessories
+        </label>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
